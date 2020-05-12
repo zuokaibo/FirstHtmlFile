@@ -52,9 +52,53 @@ the caption's position will change too-->
 
 <footer>
 
-  <iframe frameborder = "0" scrolling="no" width="30%" height="25%" name="imgbox" id="imgbox" src = "../hd.jpg" >  </iframe>
-  <p> this page is created by Bo to practice the pure html taught by MIT online
-    coursera, visit links <a href = "https://www.coursera.org/specializations/web-design" > important link </a></p>
+  <p><iframe frameborder = "0" scrolling="no" width="270" height="260" name="imgbox" id="imgbox" src = "imgs/hd.jpg" >  </iframe>
+  this page is created by Bo to practice the pure html taught by MIT online
+    coursera, visit links <a href = "https://www.coursera.org/specializations/web-design" > important link </a> </p>
+    <a href = "imgs/AB.jpg" target ="imgbox"> Jordan and Bo </a> &nbsp
+    <a href = "imgs/pup2.jpg" target="imgbox"> Cute baby golden retriever </a> &nbsp
+    <a href = "imgs/hd.jpg" target = "imgbox"> Another cute golden retriever</a>
+
+
+<!--  Try it! - Click on a link next to the 8-ball image.
+
+Red Ball
+Floating Ball
+Eight Ball
+How is it done?
+We start by hiding the iframe borders so that only the image is visible. The iframe borders can be removed by using the iframe frameborder attribute. The syntax is:
+
+frameborder="0"
+Some browsers may try to add scrollbars when they are not desired. The scrollbars can be removed by using the iframe scrolling attribute. The syntax is:
+
+scrolling="no"
+The width of the iframe is set using the iframe width attribute. Likewise, the height is set using the iframe height attribute. The values are specified in pixels. Some browsers may clip the image unless the iframe is sized a little larger than the image. For this example the image is 100 x 168 pixels. The iframe is sized to 130 x 198 pixels using the following syntax:
+
+width="130" height="198"
+When the web page is initially loaded, the iframe will display the image that is pointed to by the iframe src attribute. The value of the src attribute is the URL of the image. For this example, the image is located on the same server as the web page so a relative address can be used instead of the full web address. The syntax is:
+
+src="../images/eightball.gif"
+The iframe needs to be given a name. This example uses three <a> tags which are used to select which image to display. The iframe name is needed by the <a> tags as a destination for the images. The <a> tag uses its target attribute to point to the iframe. The <a> tag target attribute and the iframe name need to match. The iframe name is set using the iframe name attribute and the iframe id attribute.
+The syntax for the <iframe> tag attributes is:
+
+name="imgbox" id="imgbox"
+
+The syntax for the <a> tag attribute is:
+
+target="imgbox"
+
+
+The HTML Code
+<iframe frameborder="0" scrolling="no" width="130" height="198"
+   src="../images/eightball.gif" name="imgbox" id="imgbox">
+   <p>iframes are not supported by your browser.</p>
+</iframe><br />
+
+
+<a href="../images/redball.gif" target="imgbox">Red Ball</a><br />
+<a href="../images/floatingball.gif" target="imgbox">Floating Ball</a><br />
+<a href="../images/eightball.gif" target="imgbox">Eight Ball</a>-->
+
 </footer>
 
 </body>
